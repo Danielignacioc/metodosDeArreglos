@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    margin-left: 5%;
+    display: grid;
+    align-items: center;
+}
+
+table, td ,th {
+    padding: 15px;
+    border: solid 2px black;
+    max-width:50%;
+    text-align: center;
+
+}
+
+input {
+    display: flex;
+    max-width: 50%;
+}
+
+button {
+    max-width: 15%;
+}
