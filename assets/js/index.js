@@ -5,17 +5,17 @@ const tareas = [
 ];
 
 
-const boton = document.querySelector("#nuevaTarea");
 
 
 function agregarTarea() {
 const spanHtml = document.querySelector("#inner_texto");
 const inTarea = document.querySelector("input");
+
   let htmlRow = "";
   let con = 3;
 
 
-  for (const tarea of tareas) {
+  for (let tarea of tareas) {
     con++;
     htmlRow += `
     <tr>
@@ -28,6 +28,8 @@ const inTarea = document.querySelector("input");
 spanHtml.innerHTML = htmlRow;
 
 }
+
+const boton = document.querySelector("#nuevaTarea");
 
 boton.addEventListener("click", () => {
   tareas.push(con, inTarea.value, true);
