@@ -31,6 +31,23 @@ function main(validated) {
       return main(validated);
     }
 
+    function getData(task)
+    {
+      for (const i in task) {
+        if (Object.hasOwnProperty.call(task, i)) {
+          const tasks =+ task[i];
+          
+        }
+      }
+
+      function render(){}
+
+    }
+
+
+    function setData(){
+      const 
+    };
   }
 
 
