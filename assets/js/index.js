@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", main(false)) ;
 function main(validated) {
   let hr = new Date();
   console.log(hr);
+
   
   const task = document.querySelector('#addTaskTxt');
  
@@ -33,22 +34,35 @@ function main(validated) {
 
     function getData(task)
     {
+      console.log("[+] entering to getData function [+]");
+      let tasks = '';
+      
       for (const i in task) {
-        if (Object.hasOwnProperty.call(task, i)) {
-          const tasks =+ task[i];
-          
+        if (task.hasOwnProperty.call(task, i)) {
+          tasks += task[i];
+          console.log("[+] entering to for on getData function  seeing the actual element on task: "+task[i]+" [+]");
         }
       }
+      if (tasks != 'null' || tasks != 'undefined' || tasks != 0 || tasks != false || tasks != ''){
+      console.log("[+] exiting of for iterator and/from getData function: "[+]");
+      return (tasks);
+    }
 
-      function render(){}
+  }
+
+      function render(){
+        rerturn 0;
+      }
 
     }
 
 
-    function setData(){
-      const 
-    };
-  }
+
+    /* SET THE DATA PREVIUSLY SELECTED [getData(task)]. Ask and return an ordered array */
+    function setData(){ 
+      return 0; 
+    }
+  
 
 
 }
