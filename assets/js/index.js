@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", main(false)) ;
 
+
+/* principal function where the program start and use the declarated functions */
 function main(validated) {
   let hr = new Date();
   console.log(hr);
@@ -20,6 +22,7 @@ function main(validated) {
       return (task, validated);
     }
     
+    /* Make a validation with the pointed text entry and return for validated check boolean and the task in case its passed the val filter  */
     function val(task, validated) {
 
     if ((task.value != '') || (task.value != undefined) || (task.value != null)) {
@@ -32,6 +35,8 @@ function main(validated) {
       return main(validated);
     }
 
+
+    /* RETURN AN ARRAY WITH THE DATA TO BE SETTED AND LATER, RENDERED */
     function getData(task)
     {
       console.log("[+] entering to getData function [+]");
@@ -50,6 +55,7 @@ function main(validated) {
 
   }
 
+      /* PUT THE TEMPLATE AND VALUES FROM INPUT TO HTML  */
       function render(){
         rerturn 0;
       }
